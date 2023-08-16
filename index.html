@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adivinhe o Jogo de Números</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="game">
+        <h2>
+          💡 Dica. Quando o número estiver <span style="background-color: yellow;" id="baixo">baixo</span> significa que o número é <mark>maior.</mark><br />
+          E quando o número estiver <span style="background-color: yellow;" id="baixo">alto</span> significa que ele é <mark>menor.</mark>
+
+        </h2>
+        <h3>
+            Estou pensando em um número entre 0-100.<br />
+            Você consegue adivinhar?
+        </h3>
+        <div class="input-wrapper">
+          <input type="number" placeholder="00" id="guess" />
+          <button id="check-btn">Adivinhar</button>
+        </div>
+        <p id="no-of-guesses">Nº de palpites: 0</p>
+        <p id="guessed-nums">Os números adivinhados são: Nenhum</p>
+      </div>
+      <button id="restart">Reiniciar</button>
+      <div class="result">
+        <div id="hint"></div>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
